@@ -1,0 +1,31 @@
+[
+    {
+      "name": "SPL/T",
+      "live": "https://split-expense-deploy-b0bffae153fd.herokuapp.com/",
+      "git": "https://github.com/shelbyyy16/Capstone-Project",
+      "description": "Effortless Expense Splitting for Seamless Friendships – Share the Load, Not the Stress! A Django and Python powered application to take the confusion and fuss out of splitting expenses. Create Groups with your friends, add expenses and divide evenly; keeping the process quick, easy and fair.",
+      "image": "/images/landingpage.png"
+    },
+    {
+      "name": "Petals & Pots",
+      "live": "https://petalsandpots.netlify.app",
+      "git": "https://github.com/shelbyyy16/Project-3",
+      "description": "Petals & Pots, a React-powered gardening app featuring a user-friendly interface for exploring indoor and outdoor plant libraries. The app includes personalized profiles, smart search functionality, and educational content, offering users a seamless and engaging experience in cultivating their green spaces.",
+      "image": "/images/PetalsandPots.png"
+    },
+    {
+        "name": "Cart Quest",
+        "live": "https://shelbyyy16.github.io/Cart-Quest-Browser-Game/",
+        "git": "https://github.com/shelbyyy16/Cart-Quest-Browser-Game",
+        "description": "Cart Quest is a memory game where you must remember and repeat a sequence of grocery items. It keeps track of your wins and losses and offers increasingly challenging levels as you progress through the game. Messages are displayed to guide you, and buttons appear and disappear to control your interactions.",
+        "image": "/images/Cart Screenshot.png"
+      },
+  
+      {
+        "name": "Portfolio",
+        "live": "https://shelbypagan.netlify.app/",
+        "git": "https://github.com/shelbyyy16/react-portfolio",
+        "description": "A well structured portfolio built using React showcasing my professional journey, skills, and project accomplishments. It integrates design and functionality, providing an engaging and informative user experience. ",
+        "image": "/images/portfolioscreenshot.png"
+      }
+    ]
