@@ -16,22 +16,28 @@ function Home() {
 
   const loaded = () => (
     <div className="container-fluid">
-    <div className="row" style={{ height: "100vh" }}>
-      <div className="col-6 d-flex flex-column justify-content-center align-items-center">
-        <img src={about.headshot} className="headshot" alt={about.name} />
-        <h1>Shelby Pagan</h1>
-        <h3>Software Engineer.</h3>
-        <br></br>
-        <button>Resume</button>
+      <div className="row" style={{ height: "100vh" }}>
+        <div className="col-4 d-flex flex-column justify-content-center align-items-center" id="home">
+          <img
+            src="/images/headshot.jpg"
+            className="headshot"
+            alt={about.name}
+          />
+          <h1>Shelby Pagan</h1>
+          <h3>Software Engineer.</h3>
+          <br></br>
+          <button>Resume</button>
+        </div>
+        <div className="col-8 d-flex flex-column justify-content-center align-items-center" id="about-me">
+          <h1>About Me</h1>
+          {about.bio}
+          <br></br>
+          <div className="d-flex">
+            <button className="mr-2">Skills</button>
+            <button>Projects</button>
+          </div>
+        </div>
       </div>
-      <div className="col-6 d-flex flex-column justify-content-center align-items-center" id="about-me">
-        <h1>About Me</h1>
-        {about.bio}
-        <br></br>
-        <button>Skills</button>
-        <button>Projects</button>
-      </div>
-    </div>
     </div>
   );
 
