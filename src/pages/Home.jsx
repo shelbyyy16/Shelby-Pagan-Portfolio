@@ -23,17 +23,18 @@ function Home() {
             className="headshot"
             alt={about.name}
           />
-          <h1>Shelby Pagan</h1>
+          <br></br>
+          <h1>&lt;Shelby Pagan&gt;</h1>
           <h3>Software Engineer.</h3>
           <br></br>
           <button>Resume</button>
         </div>
         <div className="col-8 d-flex flex-column justify-content-center align-items-center" id="about-me">
-          <h1>About Me</h1>
-          {about.bio}
+          <h1>&lt;/About Me&gt;</h1>
+          <p className="p-5 m-5">Full Stack Developer and former Critical Care Nurse with a strong track record working in fast-paced environments. Along the way, I have developed a passion for problem-solving, attention to detail, and the ability to stay calm under pressure. Proficient in frontend and backend development, with a keen eye for detail and a commitment to delivering <strong>high-quality code.</strong> My journey is a testament to the idea that career transitions are possible with determination and a commitment to learning. I am excited to be a part of the ever-evolving tech world, where I can leverage my diverse experiences to <strong>create solutions that matter.</strong></p>
           <br></br>
           <div className="d-flex">
-            <button className="mr-2">Skills</button>
+            <button>Skills</button>
             <button>Projects</button>
           </div>
         </div>

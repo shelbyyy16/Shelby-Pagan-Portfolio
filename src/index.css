@@ -11,6 +11,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: 'Monda', sans-serif;
+  font-size: large;
+}
+
+h1 {
+  font-family: 'Changa', sans-serif;
+}
+
 .headshot {
   width: 40%;
   height: auto;
@@ -25,14 +34,14 @@
 }
 
 #about-me {
-  background-color: #e7ebe8;
+  background-color: #f5f6f5;
 }
 
 button {
   background-color: black;
   border: .25rem solid black;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  margin: 2rem;
+  padding: .4rem 4rem;
 }
 
 @media (prefers-color-scheme: light) {
