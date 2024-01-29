@@ -33,7 +33,7 @@ function Home() {
   };
 
   const loaded = () => (
-    <div className="container-fluid">
+    <div className="container-fluid p-0">
       <div
         className="d-flex flex-column justify-content-center align-items-center"
         id="home"
@@ -79,7 +79,7 @@ function Home() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="col"
+              className="col p-4"
               onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={handleMouseLeave}
             >
@@ -88,18 +88,19 @@ function Home() {
                   src={project.image}
                   className={`card-img-top ${hoveredProject === project.id ? "color" : "black-and-white"}`}
                   alt={project.description}
+                  style={{height: "350px"}}
                 ></img>
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
                   <p className="card-text p-0">{project.description}</p>
-                  <div className="btn-group" role="group">
+                  <div className="d-grid gap-2 d-md-block">
                     <a href={project.git}>
                       <button>GitHub</button>
                     </a>
                     <a href={project.live}>
                       <button>Visit</button>
                     </a>
-                  </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -114,3 +115,4 @@ function Home() {
 }
 
 export default Home;
+

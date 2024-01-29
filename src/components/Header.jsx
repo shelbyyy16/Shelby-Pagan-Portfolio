@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
 
 function Header() {
   const linkStyle = {
@@ -6,30 +7,55 @@ function Header() {
     color: 'black'
   };
 
+  const [isNavBarVisible, setNavBarVisibility] = useState(false);
+  const [isNavBarSticky, setNavBarSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY;
+
+      if (scrolled > 100) {
+        setNavBarVisibility(true);
+        setNavBarSticky(true);
+      } else {
+        setNavBarVisibility(false);
+        setNavBarSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <header>
-      <nav className="navbar bg-body-tertiary p-0">
-        <div className="container-fluid d-flex justify-content-end p-0"  style={{ backgroundColor: '#ffff' }}>
+      <nav className={`navbar bg-body-tertiary p-0 ${isNavBarSticky ? "sticky" : ""} ${isNavBarVisible ? "visible" : "hidden"}`}>
+        <div className="container-fluid d-flex justify-content-end p-0">
           <div className="col-md-8 h-100" style={{ backgroundColor: '#f5f6f5' }}>
             <ul className="navbar-nav d-flex flex-row custom-nav justify-content-end">
               <li className="nav-item px-5">
-                <Link to="#about-me" style={linkStyle}>
-                  <div>1. About</div>
-                </Link>
+                <a href="#about-me" id="nav-link" style={linkStyle}>
+                  <div>0. About</div>
+                </a>
               </li>
               <li className="nav-item px-5">
-                <Link to="#projects" style={linkStyle}>
-                  <div>2. Projects</div>
-                </Link>
+                <a href="#projects" style={linkStyle}>
+                  <div id="nav-link">1. Projects</div>
+                </a>
               </li>
               <li className="nav-item px-5">
-                <Link to="#skills" style={linkStyle}>
-                  <div>3. Skills</div>
-                </Link>
+                <a href="#skills" style={linkStyle}>
+                  <div id="nav-link">2. Skills</div>
+                </a>
               </li>
             </ul>
           </div>
-          <div className="col-md-4 w-100 h-100"></div>
         </div>
       </nav>
     </header>
