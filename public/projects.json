@@ -4,7 +4,7 @@
       "live": "https://split-expense-deploy-b0bffae153fd.herokuapp.com/",
       "git": "https://github.com/shelbyyy16/Capstone-Project",
       "description": "Effortless Expense Splitting for Seamless Friendships – Share the Load, Not the Stress! A Django and Python powered application to take the confusion and fuss out of splitting expenses. Create Groups with your friends, add expenses and divide evenly; keeping the process quick, easy and fair.",
-      "image": "/images/landingpage.png"
+      "image": "/images/SPLIT.png"
     },
     {
       "name": "Petals & Pots",
@@ -24,7 +24,7 @@
       {
         "name": "Portfolio",
         "live": "https://shelbypagan.netlify.app/",
-        "git": "https://github.com/shelbyyy16/react-portfolio",
+        "git": "https://github.com/shelbyyy16/Shelby-Pagan-Portfolio",
         "description": "A well structured portfolio built using React showcasing my professional journey, skills, and project accomplishments. It integrates design and functionality, providing an engaging and informative user experience. ",
         "image": "/images/portfolioscreenshot.png"
       }

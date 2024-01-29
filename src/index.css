@@ -20,6 +20,7 @@ body {
 
 h1 {
   font-family: 'Changa', sans-serif;
+  font-size: 3rem;
 }
 
 .headshot {
@@ -35,6 +36,21 @@ h1 {
   filter: grayscale(0%);
 }
 
+.card-img-top {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  max-height: 350px;
+}
+
+.card-img-top.color {
+  filter: grayscale(0%);
+}
+.card {
+  border-radius: 0;
+}
+
 #home {
   position: fixed;
   top: 0;
@@ -42,10 +58,9 @@ h1 {
   width: 40%;
   height: 100vh;
   background-color: #ffffff;
-  overflow: auto;
+
 }
 #about-me {
-  margin-top: 0;
   background-color: #f5f6f5;
   margin-left: 40%;
   margin-top: 10%;
@@ -72,7 +87,7 @@ button {
 }
 
 #spacer {
-  height: 4rem;
+  height: 6rem;
 }
 
 

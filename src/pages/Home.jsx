@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 function Home() {
   const [about, setAbout] = useState(null);
   const [projects, setProjects] = useState(null);
+  const [hoveredProject, setHoveredProject] = useState(null);
 
   const getAboutData = async () => {
     const response = await fetch("./about.json");
@@ -22,6 +23,14 @@ function Home() {
     getAboutData();
     getProjectsData();
   }, []);
+
+  const handleMouseEnter = (projectId) => {
+    setHoveredProject(projectId);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
 
   const loaded = () => (
     <div className="container-fluid">
@@ -53,35 +62,43 @@ function Home() {
           of the ever-evolving tech world, where I can leverage my diverse
           experiences to <strong>create solutions that matter.</strong>
         </p>
-        <br></br>
+
         <div className="d-flex">
           <button>Skills</button>
           <button>Projects</button>
         </div>
         <span id="spacer"></span>
+        <span id="spacer"></span>
+        <span id="spacer"></span>
+        <span id="spacer"></span>
+        <div className="text-center">
+          <h1>&lt;/Projects&gt;</h1>
+        </div>
+        <span id="spacer"></span>
         <div id="projects" className="row row-cols-1 row-cols-md-2 g-4">
-          <h1 className="text-center">&lt;/Projects&gt;</h1>
-          <span id="spacer"></span>
           {projects.map((project) => (
-            <div id="projects" key={project.id}>
-              <div className="card" style={{ width: "32rem" }}>
+            <div
+              key={project.id}
+              className="col"
+              onMouseEnter={() => handleMouseEnter(project.id)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="card h-100">
                 <img
                   src={project.image}
-                  className="card-img-top"
+                  className={`card-img-top ${hoveredProject === project.id ? "color" : "black-and-white"}`}
                   alt={project.description}
                 ></img>
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
-                  <p className="card-text" style={{ padding: "0rem" }}>
-                    {project.description}
-                  </p>
+                  <p className="card-text p-0">{project.description}</p>
                   <div className="btn-group" role="group">
-                  <a href={project.git}>
-                    <button>Github</button>
-                  </a>
-                  <a href={project.live}>
-                    <button>Visit</button>
-                  </a>
+                    <a href={project.git}>
+                      <button>GitHub</button>
+                    </a>
+                    <a href={project.live}>
+                      <button>Visit</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -89,7 +106,6 @@ function Home() {
           ))}
         </div>
       </div>
-
       <div id="skills">{/* ... Skills content */}</div>
     </div>
   );
