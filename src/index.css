@@ -44,9 +44,16 @@ button {
   padding: .4rem 4rem;
 }
 
-.custom-nav {
-  margin-left: auto;
+
+.white-bg {
+  background-color: white;
 }
+
+.grey-bg {
+  background-color: #f5f6f5;
+}
+
+
 
 
 @media (prefers-color-scheme: light) {
