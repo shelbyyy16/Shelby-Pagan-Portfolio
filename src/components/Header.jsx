@@ -13,25 +13,23 @@ function Header() {
           <div className="col-md-8 h-100" style={{ backgroundColor: '#f5f6f5' }}>
             <ul className="navbar-nav d-flex flex-row custom-nav justify-content-end">
               <li className="nav-item px-5">
-                <Link to="/#about" style={linkStyle}>
+                <Link to="#about-me" style={linkStyle}>
                   <div>1. About</div>
                 </Link>
               </li>
               <li className="nav-item px-5">
-                <Link to="/#projects" style={linkStyle}>
+                <Link to="#projects" style={linkStyle}>
                   <div>2. Projects</div>
                 </Link>
               </li>
               <li className="nav-item px-5">
-                <Link to="/#skills" style={linkStyle}>
+                <Link to="#skills" style={linkStyle}>
                   <div>3. Skills</div>
                 </Link>
               </li>
             </ul>
           </div>
-          <div className="col-md-4 w-100 h-100">
-
-          </div>
+          <div className="col-md-4 w-100 h-100"></div>
         </div>
       </nav>
     </header>
@@ -39,15 +37,3 @@ function Header() {
 }
 
 export default Header;
-
-
-
-
-
-
-
-
-
-
-
-

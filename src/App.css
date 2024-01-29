@@ -6,7 +6,9 @@
   background-color: #f5f6f5;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 @keyframes logo-spin {
   from {

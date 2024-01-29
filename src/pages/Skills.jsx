@@ -1,7 +1,7 @@
-function Skills() {
+// function Skills() {
 
 
-    return
-}
+//     return
+// }
 
-export default Skills
+// export default Skills
