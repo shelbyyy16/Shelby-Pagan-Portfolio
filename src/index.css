@@ -44,6 +44,11 @@ button {
   padding: .4rem 4rem;
 }
 
+.custom-nav {
+  margin-left: auto;
+}
+
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
