@@ -111,7 +111,7 @@ button {
   filter: grayscale(100%);
   transition: filter 0.5s ease;
   border-radius: 0;
-  border-bottom: 1px solid rgb(227, 227, 227);
+  border-bottom: 1px solid #c4c6c493;
   max-height: 350px;
   height: auto;
 }
@@ -133,7 +133,10 @@ button {
   padding: 2rem;
 }
 
-
+.table td:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

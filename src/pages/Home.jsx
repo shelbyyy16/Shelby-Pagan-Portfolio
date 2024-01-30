@@ -128,7 +128,7 @@ function Home() {
       </div>
       <br></br>
       <br></br>
-      <table className="table table-striped-columns" id="table">
+      <table className="table table-striped-columns" id="table"style={{ border: '1px solid #c4c6c493'}}>
     <thead>
       <tr>
         <th><h4>Languages</h4></th>
