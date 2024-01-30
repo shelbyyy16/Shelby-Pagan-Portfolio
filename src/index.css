@@ -140,25 +140,29 @@ button {
 
 @media (max-width: 768px) {
   #home {
+    position: relative;
     width: 100%;
-    margin: 0;
+    height: auto;
     justify-content: center;
+    padding: 1rem;
   }
   #about-me {
     width: 100%;
     margin-left: 0;
     justify-content: center;
   }
-
+button {
+  padding-left:2rem;
+  padding-right: 2rem;
+}
   #projects {
     width: 100%;
     margin-left: 0;
     justify-content: center;
-    margin-left: 15%;
+
   }
   #skills {
-    margin-left: 0;
     justify-content: center;
-    margin-left: 4%;
+    margin-left: 0;
   }
 }
