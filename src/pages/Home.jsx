@@ -43,22 +43,37 @@ function Home() {
         <h1>&lt;Shelby Pagan&gt;</h1>
         <h3>Software Engineer</h3>
         <br></br>
-        <a href="/resume/Shelby.Pagan.Resume.pdf" download="Shelby.Pagan.Resume.pdf">
-        <button>Resume</button>
+        <a
+          href="/resume/Shelby.Pagan.Resume.pdf"
+          download="Shelby.Pagan.Resume.pdf"
+        >
+          <button>Resume</button>
         </a>
         <br></br>
         <div className="d-flex gap-3">
-        <a href="https://www.linkedin.com/in/shelbypagan/" className="text-decoration-none">
-          <img src="/images/linkedin.png" className="img-fluid" alt="LinkedIn" />
-        </a>
-        <a href="mailto:shelby.e.pagan@gmail.com" className="text-decoration-none">
-          <img src="/images/email.png" className="img-fluid" alt="GitHub" />
-        </a>
-        <a href="https://github.com/shelbyyy16" className="text-decoration-none">
-          <img src="/images/github.png" className="img-fluid" alt="GitHub" />
-        </a>
-    
-      </div>
+          <a
+            href="https://www.linkedin.com/in/shelbypagan/"
+            className="text-decoration-none"
+          >
+            <img
+              src="/images/linkedin.png"
+              className="img-fluid"
+              alt="LinkedIn"
+            />
+          </a>
+          <a
+            href="mailto:shelby.e.pagan@gmail.com"
+            className="text-decoration-none"
+          >
+            <img src="/images/email.png" className="img-fluid" alt="GitHub" />
+          </a>
+          <a
+            href="https://github.com/shelbyyy16"
+            className="text-decoration-none"
+          >
+            <img src="/images/github.png" className="img-fluid" alt="GitHub" />
+          </a>
+        </div>
       </div>
       <div
         className="d-flex flex-column justify-content-center align-items-center"
@@ -79,8 +94,12 @@ function Home() {
         </p>
 
         <div className="d-flex">
-         <a href="#skills"><button>Skills</button></a>
-         <a href="#projects"><button>Projects</button></a>
+          <a href="#skills">
+            <button>Skills</button>
+          </a>
+          <a href="#projects">
+            <button>Projects</button>
+          </a>
         </div>
         <span id="spacer"></span>
         <span id="spacer"></span>
@@ -101,9 +120,10 @@ function Home() {
               <div className="card h-100">
                 <img
                   src={project.image}
-                  className={`card-img-top ${hoveredProject === project.id ? "color" : "black-and-white"}`}
+                  className={`card-img-top ${
+                    hoveredProject === project.id ? "color" : "black-and-white"
+                  }`}
                   alt={project.description}
-                  
                 ></img>
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
@@ -115,7 +135,7 @@ function Home() {
                     <a href={project.live}>
                       <button>Visit</button>
                     </a>
-                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -123,60 +143,70 @@ function Home() {
         </div>
       </div>
       <div id="skills">
-      <div className="text-center">
-      <h1>&lt;/Skills&gt;</h1>
-      </div>
-      <br></br>
-      <br></br>
-      <table className="table table-striped-columns" id="table"style={{ border: '1px solid #c4c6c493'}}>
-    <thead>
-      <tr>
-        <th><h4>Languages</h4></th>
-        <th><h4>Frameworks</h4></th>
-        <th><h4>Libraries</h4></th>
-        <th><h4>Databases</h4></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>JavaScript</td>
-        <td>React</td>
-        <td>Bootstrap</td>
-        <td>SQL</td>
-      </tr>
-      <tr>
-        <td>Python</td>
-        <td>Node.js</td>
-        <td>Tailwind</td>
-        <td>MongoDB</td>
-      </tr>
-      <tr>
-        <td>HTML/CSS</td>
-        <td>Express.js</td>
-        <td>Materialize</td>
-        <td>PostgreSQL</td>
-      </tr>
-      <tr>
-        <td>SQL</td>
-        <td>Django</td>
-        <td>Semantic UI</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Typescript</td>
-        <td>Jquery</td>
-        <td>Bulma</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+        <div className="text-center">
+          <h1>&lt;/Skills&gt;</h1>
         </div>
-
+        <br></br>
+        <br></br>
+        <table
+          className="table table-striped-columns"
+          id="table"
+          style={{ border: "1px solid #c4c6c493" }}
+        >
+          <thead>
+            <tr>
+              <th>
+                <h4>Languages</h4>
+              </th>
+              <th>
+                <h4>Frameworks</h4>
+              </th>
+              <th>
+                <h4>Libraries</h4>
+              </th>
+              <th>
+                <h4>Databases</h4>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript</td>
+              <td>React</td>
+              <td>Bootstrap</td>
+              <td>SQL</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Node.js</td>
+              <td>Tailwind</td>
+              <td>MongoDB</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>Express.js</td>
+              <td>Materialize</td>
+              <td>PostgreSQL</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>Django</td>
+              <td>Semantic UI</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Typescript</td>
+              <td>Jquery</td>
+              <td>Bulma</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   );
 
   return about && projects ? loaded() : <h1>Loading...</h1>;
 }
 
 export default Home;
-

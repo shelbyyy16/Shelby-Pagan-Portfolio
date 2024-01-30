@@ -168,9 +168,16 @@ button {
   #skills {
     text-align: center;  
     margin-left: 0;
+    padding: 0;
   }
 
   table {
     margin: 0 auto;
+    width: 50%;
+    font-size: small;
+
+    h4 {
+      font-size: small;
+    }
   }
 }
