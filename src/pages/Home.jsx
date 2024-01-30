@@ -126,19 +126,41 @@ function Home() {
       <div className="text-center">
       <h1>&lt;/Skills&gt;</h1>
       </div>
-      <table className="table">
+      <br></br>
+      <br></br>
+      <table className="table table-striped-columns" id="table">
     <thead>
       <tr>
-        <th>Languages</th>
-        <th>Frameworks</th>
-        <th>Databases</th>
+        <th><h4>Languages</h4></th>
+        <th><h4>Frameworks</h4></th>
+        <th><h4>Databases</h4></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>JavaScript</td>
-        <td>React, Node.js</td>
-        <td>MySQL, MongoDB</td>
+        <td>React</td>
+        <td>SQL</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Node.js</td>
+        <td>MongoDB</td>
+      </tr>
+      <tr>
+        <td>HTML/CSS</td>
+        <td>Express.js</td>
+        <td>PostgreSQL</td>
+      </tr>
+      <tr>
+        <td>SQL</td>
+        <td>Django</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Typescript</td>
+        <td>Jquery</td>
+        <td></td>
       </tr>
     </tbody>
   </table>

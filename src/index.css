@@ -125,6 +125,14 @@ button {
   border-radius: 0;
 }
 
+/* SKILLS */
+
+#skills {
+  margin-left: 40%;
+  margin-top: 10%;
+  padding: 1rem;
+}
+
 
 
 @media (prefers-color-scheme: light) {
