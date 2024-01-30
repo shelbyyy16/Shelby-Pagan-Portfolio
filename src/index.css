@@ -146,23 +146,31 @@ button {
     justify-content: center;
     padding: 1rem;
   }
+
   #about-me {
     width: 100%;
     margin-left: 0;
     justify-content: center;
   }
-button {
-  padding-left:2rem;
-  padding-right: 2rem;
-}
+
+  button {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   #projects {
     width: 100%;
     margin-left: 0;
     justify-content: center;
-
   }
+
   #skills {
-    justify-content: center;
+    text-align: center;  
     margin-left: 0;
+  }
+
+  table {
+    margin: 0 auto;  /* Center the table horizontally */
+    width: 100%;     /* Make sure the table takes up the full width */
   }
 }

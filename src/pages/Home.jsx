@@ -133,6 +133,7 @@ function Home() {
       <tr>
         <th><h4>Languages</h4></th>
         <th><h4>Frameworks</h4></th>
+        <th><h4>Libraries</h4></th>
         <th><h4>Databases</h4></th>
       </tr>
     </thead>
@@ -140,26 +141,31 @@ function Home() {
       <tr>
         <td>JavaScript</td>
         <td>React</td>
+        <td>Bootstrap</td>
         <td>SQL</td>
       </tr>
       <tr>
         <td>Python</td>
         <td>Node.js</td>
+        <td>Tailwind</td>
         <td>MongoDB</td>
       </tr>
       <tr>
         <td>HTML/CSS</td>
         <td>Express.js</td>
+        <td>Materialize</td>
         <td>PostgreSQL</td>
       </tr>
       <tr>
         <td>SQL</td>
         <td>Django</td>
+        <td>Semantic UI</td>
         <td></td>
       </tr>
       <tr>
         <td>Typescript</td>
         <td>Jquery</td>
+        <td>Bulma</td>
         <td></td>
       </tr>
     </tbody>
