@@ -125,6 +125,7 @@ button {
   border-radius: 0;
 }
 
+
 /* SKILLS */
 
 #skills {
@@ -170,7 +171,6 @@ button {
   }
 
   table {
-    margin: 0 auto;  /* Center the table horizontally */
-    width: 100%;     /* Make sure the table takes up the full width */
+    margin: 0 auto;
   }
 }
