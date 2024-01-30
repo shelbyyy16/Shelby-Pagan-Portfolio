@@ -122,13 +122,29 @@ function Home() {
           ))}
         </div>
       </div>
+      <div id="skills">
       <div className="text-center">
       <h1>&lt;/Skills&gt;</h1>
       </div>
-      <div id="skills">
-        
+      <table className="table">
+    <thead>
+      <tr>
+        <th>Languages</th>
+        <th>Frameworks</th>
+        <th>Databases</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>JavaScript</td>
+        <td>React, Node.js</td>
+        <td>MySQL, MongoDB</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
         </div>
-    </div>
+
   );
 
   return about && projects ? loaded() : <h1>Loading...</h1>;
