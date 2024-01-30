@@ -68,6 +68,11 @@ h1 {
   background-color: #ffffff;
 }
 
+.img-fluid {
+  width: 30px;
+  height: auto;
+}
+
 #about-me {
   background-color: #f5f6f5;
   margin-left: 40%;
@@ -108,10 +113,12 @@ button {
   border-radius: 0;
   border-bottom: 1px solid rgb(227, 227, 227);
   max-height: 350px;
+  height: auto;
 }
 
 .card:hover .card-img-top {
   filter: grayscale(0%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .card {

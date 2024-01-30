@@ -43,7 +43,22 @@ function Home() {
         <h1>&lt;Shelby Pagan&gt;</h1>
         <h3>Software Engineer</h3>
         <br></br>
+        <a href="/resume/Shelby.Pagan.Resume.pdf" download="Shelby.Pagan.Resume.pdf">
         <button>Resume</button>
+        </a>
+        <br></br>
+        <div className="d-flex gap-3">
+        <a href="https://www.linkedin.com/in/shelbypagan/" className="text-decoration-none">
+          <img src="/images/linkedin.png" className="img-fluid" alt="LinkedIn" />
+        </a>
+        <a href="mailto:shelby.e.pagan@gmail.com" className="text-decoration-none">
+          <img src="/images/email.png" className="img-fluid" alt="GitHub" />
+        </a>
+        <a href="https://github.com/shelbyyy16" className="text-decoration-none">
+          <img src="/images/github.png" className="img-fluid" alt="GitHub" />
+        </a>
+    
+      </div>
       </div>
       <div
         className="d-flex flex-column justify-content-center align-items-center"
@@ -64,8 +79,8 @@ function Home() {
         </p>
 
         <div className="d-flex">
-          <button>Skills</button>
-          <button>Projects</button>
+         <a href="#skills"><button>Skills</button></a>
+         <a href="#projects"><button>Projects</button></a>
         </div>
         <span id="spacer"></span>
         <span id="spacer"></span>
@@ -88,7 +103,7 @@ function Home() {
                   src={project.image}
                   className={`card-img-top ${hoveredProject === project.id ? "color" : "black-and-white"}`}
                   alt={project.description}
-                  style={{height: "350px"}}
+                  
                 ></img>
                 <div className="card-body">
                   <h5 className="card-title">{project.name}</h5>
@@ -107,7 +122,12 @@ function Home() {
           ))}
         </div>
       </div>
-      <div id="skills">{/* ... Skills content */}</div>
+      <div className="text-center">
+      <h1>&lt;/Skills&gt;</h1>
+      </div>
+      <div id="skills">
+        
+        </div>
     </div>
   );
 
