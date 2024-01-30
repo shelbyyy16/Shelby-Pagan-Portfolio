@@ -138,15 +138,27 @@ button {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 768px) {
+  #home {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
   }
-  a:hover {
-    color: #747bff;
+  #about-me {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
   }
-  button {
-    background-color: #f9f9f9;
+
+  #projects {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    margin-left: 15%;
+  }
+  #skills {
+    margin-left: 0;
+    justify-content: center;
+    margin-left: 4%;
   }
 }
