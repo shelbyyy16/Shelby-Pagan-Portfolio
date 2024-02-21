@@ -94,6 +94,7 @@ h1 {
 
 button {
   background-color: black;
+  color:white;
   border: .25rem solid black;
   margin: 2rem;
   padding: .4rem 4rem;
