@@ -85,7 +85,7 @@ function Home() {
           track record of working in fast-paced environments. Along the way, I
           have developed a passion for problem-solving, attention to detail, and
           the ability to stay calm under pressure. Proficient in frontend and
-          backend development, with a keen eye for detail and a commitment to
+          backend development, with a keen eye for design and a commitment to
           delivering <strong>high-quality code.</strong> My journey is a
           testament to the idea that career transitions are possible with
           determination and a commitment to learning. I am excited to be a part
