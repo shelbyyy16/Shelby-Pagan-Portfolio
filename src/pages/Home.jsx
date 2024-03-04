@@ -178,26 +178,32 @@ function Home() {
             </tr>
             <tr>
               <td>Python</td>
-              <td>Node.js</td>
+              <td>React Native</td>
               <td>Tailwind</td>
               <td>MongoDB</td>
             </tr>
             <tr>
               <td>HTML/CSS</td>
-              <td>Express.js</td>
+              <td>Node.js</td>
               <td>Materialize</td>
               <td>PostgreSQL</td>
             </tr>
             <tr>
               <td>SQL</td>
-              <td>Django</td>
+              <td>Express.js</td>
               <td>Semantic UI</td>
               <td></td>
             </tr>
             <tr>
               <td>Typescript</td>
-              <td>Jquery</td>
+              <td>Django</td>
               <td>Bulma</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Jquery</td>
+              <td></td>
               <td></td>
             </tr>
           </tbody>
