@@ -40,16 +40,15 @@ function Home() {
       >
         <img src="/images/headshot.jpg" className="headshot" alt={about.name} />
         <br></br>
-        <h1>&lt;Shelby Pagan&gt;</h1>
-        <h3>Software Engineer</h3>
-        <br></br>
-        <a
-          href="/resume/Shelby.Pagan.Resume.pdf"
-          download="Shelby.Pagan.Resume.pdf"
-        >
-          <button>Resume</button>
-        </a>
-        <br></br>
+        <h1>Shelby Pagan</h1>
+        <div className="py-4">
+          <a
+            href="/resume/Shelby.Pagan.Resume.pdf"
+            download="Shelby.Pagan.Resume.pdf"
+          >
+            <button>Resume</button>
+          </a>
+        </div>
         <div className="d-flex gap-3">
           <a
             href="https://www.linkedin.com/in/shelbypagan/"
@@ -75,139 +74,114 @@ function Home() {
           </a>
         </div>
       </div>
-      <div
-        className="d-flex flex-column justify-content-center align-items-center"
-        id="about-me"
-      >
-        <h1>&lt;/About Me&gt;</h1>
-        <p>
-          Full Stack Developer and former Critical Care Nurse with a strong
-          track record of working in fast-paced environments. Along the way, I
-          have developed a passion for problem-solving, attention to detail, and
-          the ability to stay calm under pressure. Proficient in frontend and
-          backend development, with a keen eye for design and a commitment to
-          delivering <strong>high-quality code.</strong> My journey is a
-          testament to the idea that career transitions are possible with
-          determination and a commitment to learning. I am excited to be a part
-          of the ever-evolving tech world, where I can leverage my diverse
-          experiences to <strong>create solutions that matter.</strong>
-        </p>
-
-        <div className="d-flex">
-          <a href="#skills">
-            <button>Skills</button>
-          </a>
-          <a href="#projects">
-            <button>Projects</button>
-          </a>
+      <div className="d-flex flex-column align-items-start" id="about-me">
+        <div className="left-aligned-text">
+          <h1>About Me</h1>
+          <p className="left-aligned-text">
+            Full Stack Developer and former Critical Care Nurse with a strong
+            track record of working in fast-paced environments. Along the way, I
+            have developed a{" "}
+            <span id="color">
+              passion for problem-solving, attention to detail, and the ability
+              to stay calm under pressure.
+            </span>{" "}
+            Proficient in frontend and backend development, with a keen eye for
+            design and a commitment to delivering{" "}
+            <span id="color">high-quality code.</span> My journey is a testament
+            to the idea that career transitions are possible with determination
+            and a commitment to learning. I am excited to be a part of the
+            ever-evolving tech world, where I can leverage my diverse
+            experiences to <span id="color">create solutions that matter.</span>
+          </p>
         </div>
         <span id="spacer"></span>
-        <span id="spacer"></span>
-        <span id="spacer"></span>
-        <span id="spacer"></span>
-        <div className="text-center">
-          <h1>&lt;/Projects&gt;</h1>
+        <div className="container">
+          <div className="field">
+            <div className="scroll"></div>
+          </div>
         </div>
+        <br></br>
         <span id="spacer"></span>
-        <div id="projects" className="row row-cols-1 row-cols-md-2 g-4">
+        <span id="spacer"></span>
+        <div id="projects" className="d-flex flex-column align-items-start">
+          <div className="left-aligned-text">
+            <h1>Projects</h1>
+          </div>
           {projects.map((project) => (
             <div
               key={project.id}
-              className="col p-4"
               onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="card h-100">
-                <img
-                  src={project.image}
-                  className={`card-img-top ${
-                    hoveredProject === project.id ? "color" : "black-and-white"
-                  }`}
-                  alt={project.description}
-                ></img>
-                <div className="card-body">
-                  <h5 className="card-title">{project.name}</h5>
-                  <p className="card-text p-0">{project.description}</p>
-                  <div className="d-grid gap-2 d-md-block">
-                    <a href={project.git}>
-                      <button>GitHub</button>
-                    </a>
-                    <a href={project.live}>
-                      <button>Visit</button>
-                    </a>
+              <div className="row">
+                <div className="col-md-6 mt-5 p-0">
+                  <div className="card-body mt-5 p-0">
+                    <h4 className="card-title p-0 mx-2 my-4 left-aligned-text">
+                      <span id="color">{project.name}</span>
+                    </h4>
+                    <p className="card-text p-0 mx-2 left-aligned-text">
+                      {project.description}
+                    </p>
+                    <div className="py-4 left-aligned-text mx-2">
+                      <a href={project.git}>
+                        <button>GitHub</button>
+                      </a>
+                      <a href={project.live}>
+                        <button className="button mx-5">Visit</button>
+                      </a>
+                    </div>
                   </div>
+                </div>
+                <div className="col-md-5">
+                  <img
+                    className="project-img"
+                    src={project.image}
+                    alt={project.description}
+                  ></img>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-      <div id="skills">
-        <div className="text-center">
-          <h1>&lt;/Skills&gt;</h1>
+      <div className="d-flex flex-column align-items-start" id="skills">
+        <div className="left-aligned-text mx-4">
+          <h1>Skills</h1>
         </div>
         <br></br>
         <br></br>
-        <table
-          className="table table-striped-columns"
-          id="table"
-          style={{ border: "1px solid #c4c6c493" }}
-        >
-          <thead>
-            <tr>
-              <th>
-                <h4>Languages</h4>
-              </th>
-              <th>
-                <h4>Frameworks</h4>
-              </th>
-              <th>
-                <h4>Libraries</h4>
-              </th>
-              <th>
-                <h4>Databases</h4>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>JavaScript</td>
-              <td>React</td>
-              <td>Bootstrap</td>
-              <td>SQL</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>React Native</td>
-              <td>Tailwind</td>
-              <td>MongoDB</td>
-            </tr>
-            <tr>
-              <td>HTML/CSS</td>
-              <td>Node.js</td>
-              <td>Materialize</td>
-              <td>PostgreSQL</td>
-            </tr>
-            <tr>
-              <td>SQL</td>
-              <td>Express.js</td>
-              <td>Semantic UI</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Typescript</td>
-              <td>Django</td>
-              <td>Bulma</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>Jquery</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
+        <span id="color" className="mx-4">
+          <h4>Languages</h4>
+        </span>
+        <div className="mx-4 py-3">
+          <button className="button-skills mx-1">JavaScript</button>
+          <button className="button-skills mx-1">Python</button>
+          <button className="button-skills mx-1">HTML/CSS</button>
+          <button className="button-skills mx-1">SQL</button>
+          <button className="button-skills mx-1">TypeScript</button>
+        </div>
+        <br></br>
+        <br></br>
+        <span id="color" className="mx-4">
+          <h4>Frameworks</h4>
+        </span>
+        <div className="mx-4 py-3">
+          <button className="button-skills mx-1">React</button>
+          <button className="button-skills mx-1">React Native</button>
+          <button className="button-skills mx-1">Django</button>
+          <button className="button-skills mx-1">Node.js</button>
+          <button className="button-skills mx-1">Express.js</button>
+          <button className="button-skills mx-1">jQuery</button>
+        </div>
+        <br></br>
+        <br></br>
+        <span id="color" className="mx-4 py-3">
+          <h4>Databases</h4>
+        </span>
+        <div className="mx-4">
+          <button className="button-skills mx-1">PostgreSQL</button>
+          <button className="button-skills mx-1">MongoDB</button>
+        </div>
       </div>
     </div>
   );

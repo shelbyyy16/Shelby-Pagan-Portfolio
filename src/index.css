@@ -4,7 +4,7 @@
   font-weight: 400;
   margin: 0;
   color-scheme: light dark;
-  background-color: #f5f6f5;
+  background-color: #ddcfc1;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,10 +13,12 @@
 }
 
 body {
-  font-family: 'Monda', sans-serif;
-  font-size: large;
+  font-family: "Inter", sans-serif;
+  
 }
-
+ p {
+  font-size: larger;
+ }
 /* NAV BAR */
 
 .visible {
@@ -38,10 +40,19 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
 }
 
+.nav-item{
+  font-size: larger;
+}
 
 h1 {
-  font-family: 'Changa', sans-serif;
-  font-size: 3rem;
+  font-family: 'Anton', sans-serif;
+  font-size: 3.5rem;
+  color: #1c1a1a;
+  padding-bottom: 2rem;
+}
+
+h4 {
+  font-family: 'Anton', sans-serif;
 }
 
 /* LANDING PAGE */
@@ -51,13 +62,9 @@ h1 {
   height: auto;
   max-width: 400px; 
   max-height: 400px;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease-in-out; 
+  border-radius: 4%;
 }
 
-.headshot:hover {
-  filter: grayscale(0%);
-}
 
 #home {
   position: fixed;
@@ -65,61 +72,81 @@ h1 {
   left: 0;
   width: 40%;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #abb9c2;
 }
 
 .img-fluid {
   width: 30px;
   height: auto;
+  color: #1c1a1a;
 }
 
 #about-me {
-  background-color: #f5f6f5;
+  background-color: #ddcfc1;
   margin-left: 40%;
-  margin-top: 10%;
-  padding: 1rem;
+  margin-top: 5%;
+  padding: 5rem;
 
   p {
     padding: 4rem;
   }
 }
 
-.white-bg {
-  background-color: white;
+#about-me .left-aligned-text {
+  text-align: left;
+  padding: 0rem;
 }
 
-.grey-bg {
-  background-color: #f5f6f5;
-}
 
 button {
-  background-color: black;
-  color:white;
-  border: .25rem solid black;
-  margin: 2rem;
-  padding: .4rem 4rem;
+  background-color: #9a441c;
+  color:#ddcfc1;
+  border: .15rem solid #9a441c;
+  border-radius: 10%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: larger;
+}
+
+button:hover{
+  background-color:transparent;
+  color:#9a441c;
+}
+
+.button-skills {
+  background-color:transparent;
+  color:#9a441c;
+}
+
+.button-skills:hover {
+  background-color:#9a441c;
+  color:#ddcfc1;
 }
 
 #spacer {
   height: 6rem;
 }
 
-
+#color {
+  color: #5296c0;
+  font-weight: 600;
+}
 
 /* PROJECTS */
 
-.card-img-top {
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
-  border-radius: 0;
-  border-bottom: 1px solid #c4c6c493;
-  max-height: 350px;
-  height: auto;
+#projects {
+  background-color: #ddcfc1;
+  border: none;
+  padding-top: 2rem;
+
 }
 
-.card:hover .card-img-top {
-  filter: grayscale(0%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1); 
+.project-img {
+  transition: filter 0.5s ease;
+  max-height: 500px;
+  max-width: 500px;
+  height: auto;
+  width: auto;
 }
 
 .card {
@@ -140,6 +167,73 @@ button {
   transition: box-shadow 0.3s ease-in-out;
 }
 
+/* ANITMATIONS */
+
+.container {
+	width: 100%;
+	height: 100%;
+	background-color: #ddcfc1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #9a441c;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #9a441c;
+  	border-bottom: 2px solid #9a441c;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+
+
+
 @media (max-width: 768px) {
   #home {
     position: relative;
@@ -152,7 +246,7 @@ button {
   #about-me {
     width: 100%;
     margin-left: 0;
-    justify-content: center;
+
   }
 
   button {
@@ -163,22 +257,17 @@ button {
   #projects {
     width: 100%;
     margin-left: 0;
-    justify-content: center;
   }
 
-  #skills {
-    text-align: center;  
+  #skills { 
     margin-left: 0;
     padding: 0;
   }
-
-  table {
-    margin: 0 auto;
-    width: 50%;
-    font-size: small;
-
-    h4 {
-      font-size: small;
-    }
-  }
 }
+
+
+/* black: #2f2b2a 
+beige: #ddcfc1
+rust: #9a441c
+blue: #abb9c2
+dark blue: #5296c0; */

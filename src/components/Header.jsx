@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 function Header() {
   const linkStyle = {
     textDecoration: 'none',
-    color: 'black'
+    color: '#ddcfc1',
   };
 
   const [isNavBarVisible, setNavBarVisibility] = useState(false);
@@ -36,22 +36,22 @@ function Header() {
   return (
     <header>
       <nav className={`navbar bg-body-tertiary p-0 ${isNavBarSticky ? "sticky" : ""} ${isNavBarVisible ? "visible" : "hidden"}`}>
-        <div className="container-fluid d-flex justify-content-end p-0">
-          <div className="col-md-8 h-100" style={{ backgroundColor: '#f5f6f5' }}>
+        <div className="container-fluid d-flex justify-content-end p-0" style={{ backgroundColor: '#1c1a1a', height: '3rem'  }}>
+          <div className="col-md-8 h-100" style={{ backgroundColor: '#1c1a1a', height: '3rem' }}>
             <ul className="navbar-nav d-flex flex-row custom-nav justify-content-end">
               <li className="nav-item px-5">
                 <a href="#about-me" id="nav-link" style={linkStyle}>
-                  <div>0. About</div>
+                  <div className="py-2">About</div>
                 </a>
               </li>
               <li className="nav-item px-5">
                 <a href="#projects" style={linkStyle}>
-                  <div id="nav-link">1. Projects</div>
+                  <div className="py-2" id="nav-link">Projects</div>
                 </a>
               </li>
               <li className="nav-item px-5">
                 <a href="#skills" style={linkStyle}>
-                  <div id="nav-link">2. Skills</div>
+                  <div className="py-2" id="nav-link">Skills</div>
                 </a>
               </li>
             </ul>
