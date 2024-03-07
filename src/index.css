@@ -75,10 +75,8 @@ h4 {
 /* LANDING PAGE */
 
 .headshot {
-  width: 40%;
-  height: auto;
-  max-width: 400px; 
-  max-height: 400px;
+  max-height: 500px;
+  width: auto;
   border-radius: 4%;
 }
 

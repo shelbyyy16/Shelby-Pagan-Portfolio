@@ -91,9 +91,10 @@ function Home() {
         </div>
       </div>
       <div className="d-flex flex-column align-items-start" id="about-me">
-        <div className="left-aligned-text">
+      
+        <div className="left-aligned-text p-4">
           <h1>About Me</h1>
-          <p className="left-aligned-text">
+          <p className="left-aligned-text ">
             Full Stack Developer and former Critical Care Nurse with a strong
             track record of working in fast-paced environments. Along the way, I
             have developed a{" "}
@@ -111,12 +112,14 @@ function Home() {
           </p>
         </div>
         <span id="spacer"></span>
+        <span id="spacer"></span>
         <div className="container">
           <div className="field">
             <div className="scroll"></div>
           </div>
         </div>
         <br></br>
+        <span id="spacer"></span>
         <span id="spacer"></span>
         <span id="spacer"></span>
         <div id="projects" className="d-flex flex-column align-items-start">
