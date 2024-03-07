@@ -41,7 +41,7 @@ function Home() {
       >
         <img src="/images/headshot.jpg" className="headshot" alt={about.name} />
         <br></br>
-        <h1>Shelby Pagan</h1>
+        <h1 className="p-1">Shelby Pagan</h1>
         <TypeAnimation
           sequence={[
             "Software Engineer",
@@ -132,13 +132,13 @@ function Home() {
               <div className="row">
                 <div className="col-md-6 mt-5 p-0">
                   <div className="card-body mt-5 p-0">
-                    <h4 className="card-title p-0 mx-2 my-4 left-aligned-text">
+                    <h4 className="card-title p-0 mx-3 my-4 left-aligned-text">
                       <span id="color">{project.name}</span>
                     </h4>
-                    <p className="card-text p-0 mx-2 left-aligned-text">
+                    <p className="card-text p-0 mx-3 left-aligned-text">
                       {project.description}
                     </p>
-                    <div className="py-4 left-aligned-text mx-2">
+                    <div className="py-4 left-aligned-text mx-3">
                       <a href={project.git}>
                         <button>GitHub</button>
                       </a>
@@ -161,15 +161,15 @@ function Home() {
         </div>
       </div>
       <div className="d-flex flex-column align-items-start" id="skills">
-        <div className="left-aligned-text mx-4">
+        <div className="left-aligned-text mx-5">
           <h1>Skills</h1>
         </div>
         <br></br>
         <br></br>
-        <span id="color" className="mx-4">
+        <span id="color" className="mx-5">
           <h4>Languages</h4>
         </span>
-        <div className="mx-4 py-3">
+        <div className="mx-5 py-3">
           <button className="button-skills mx-1">JavaScript</button>
           <button className="button-skills mx-1">Python</button>
           <button className="button-skills mx-1">HTML/CSS</button>
@@ -178,10 +178,10 @@ function Home() {
         </div>
         <br></br>
         <br></br>
-        <span id="color" className="mx-4">
+        <span id="color" className="mx-5">
           <h4>Frameworks</h4>
         </span>
-        <div className="mx-4 py-3">
+        <div className="mx-5 py-3">
           <button className="button-skills mx-1">React</button>
           <button className="button-skills mx-1">React Native</button>
           <button className="button-skills mx-1">Django</button>
@@ -191,10 +191,10 @@ function Home() {
         </div>
         <br></br>
         <br></br>
-        <span id="color" className="mx-4 py-3">
+        <span id="color" className="mx-5 py-3">
           <h4>Databases</h4>
         </span>
-        <div className="mx-4">
+        <div className="mx-5">
           <button className="button-skills mx-1">PostgreSQL</button>
           <button className="button-skills mx-1">MongoDB</button>
         </div>
