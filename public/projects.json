@@ -14,13 +14,6 @@
       "image": "/images/LAPTOP.petalsandpots.png"
     },
     {
-      "name": "Portfolio",
-      "live": "https://shelbypagan.netlify.app/",
-      "git": "https://github.com/shelbyyy16/Shelby-Pagan-Portfolio",
-      "description": "A well structured portfolio built using React showcasing my professional journey, skills, and project accomplishments. It integrates design and functionality, providing an engaging and informative user experience. ",
-      "image": "/images/LAPTOP.portfolio.png"
-    },
-    {
       "name": "Cart Quest",
       "live": "https://shelbyyy16.github.io/Cart-Quest-Browser-Game/",
       "git": "https://github.com/shelbyyy16/Cart-Quest-Browser-Game",
