@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 function Home() {
   const [about, setAbout] = useState(null);
@@ -41,6 +42,21 @@ function Home() {
         <img src="/images/headshot.jpg" className="headshot" alt={about.name} />
         <br></br>
         <h1>Shelby Pagan</h1>
+        <TypeAnimation
+          sequence={[
+            "Software Engineer",
+            1000,
+            "Frontend Developer",
+            1000,
+            "Registered Nurse",
+            1000,
+            "House Plant Enthusiast",
+            1000,
+          ]}
+          speed={50}
+          style={{ fontSize: "1.5em" }}
+          repeat={Infinity}
+        />
         <div className="py-4">
           <a
             href="/resume/Shelby.Pagan.Resume.pdf"
